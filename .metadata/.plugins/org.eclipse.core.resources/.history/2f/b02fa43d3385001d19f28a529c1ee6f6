@@ -1,0 +1,5 @@
+package discoveryServer.paymentService.dataAccess;
+
+public interface PaymentRepository {
+
+}

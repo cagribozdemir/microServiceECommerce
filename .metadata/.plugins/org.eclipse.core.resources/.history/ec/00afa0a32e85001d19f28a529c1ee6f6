@@ -1,0 +1,5 @@
+package discoveryServer.orderService.business.responses.get;
+
+public class GetOrderResponse {
+
+}

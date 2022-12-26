@@ -1,0 +1,13 @@
+package discoveryServer.paymentService.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+import discoveryServer.paymentService.business.abstracts.PaymentService;
+import discoveryServer.paymentService.dataAccess.PaymentRepository;
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class PaymentManager implements PaymentService {
+	private PaymentRepository paymentRepository;
+}

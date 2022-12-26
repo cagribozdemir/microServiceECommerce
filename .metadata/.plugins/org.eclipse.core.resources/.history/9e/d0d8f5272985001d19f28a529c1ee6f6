@@ -1,0 +1,5 @@
+package discoveryServer.orderService.business.abstracts;
+
+public interface OrderService {
+
+}

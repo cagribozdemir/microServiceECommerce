@@ -1,0 +1,5 @@
+package discoveryServer.orderService.configurations.kafka;
+
+public class KafkaTopicConfiguration {
+
+}

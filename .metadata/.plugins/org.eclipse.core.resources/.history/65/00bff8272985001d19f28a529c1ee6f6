@@ -1,0 +1,5 @@
+package discoveryServer.orderService.entities;
+
+public class Order {
+
+}

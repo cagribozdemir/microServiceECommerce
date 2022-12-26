@@ -1,0 +1,5 @@
+package discoveryServer.orderService.webApi;
+
+public class OrdersController {
+
+}

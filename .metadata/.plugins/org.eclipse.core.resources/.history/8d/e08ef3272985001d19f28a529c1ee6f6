@@ -1,0 +1,5 @@
+package discoveryServer.orderService.business.concretes;
+
+public class OrderManager {
+
+}

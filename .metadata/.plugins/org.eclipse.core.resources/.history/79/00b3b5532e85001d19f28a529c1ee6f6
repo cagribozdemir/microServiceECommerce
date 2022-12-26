@@ -1,0 +1,5 @@
+package discoveryServer.orderService.business.requests.create;
+
+public class CreateOrderRequest {
+
+}

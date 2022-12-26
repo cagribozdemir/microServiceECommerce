@@ -1,0 +1,5 @@
+package discoveryServer.paymentService.business.requests.update;
+
+public class UpdatePaymentRequest {
+
+}

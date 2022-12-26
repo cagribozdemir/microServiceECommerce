@@ -1,0 +1,5 @@
+package discoveryServer.paymentService.business.responses.get;
+
+public class GetAllPaymentsResponse {
+
+}

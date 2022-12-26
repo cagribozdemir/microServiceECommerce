@@ -1,0 +1,7 @@
+package discoveryServer.orderService.business.concretes;
+
+import discoveryServer.orderService.business.abstracts.OrderService;
+
+public class OrderManager implements OrderService {
+
+}

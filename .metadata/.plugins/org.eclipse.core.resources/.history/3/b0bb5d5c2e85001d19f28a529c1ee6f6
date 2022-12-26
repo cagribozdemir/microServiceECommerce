@@ -1,0 +1,11 @@
+package discoveryServer.orderService.business.requests.update;
+
+import java.util.List;
+
+public class UpdateOrderRequest {
+	private String id;
+	private String customerId;
+	private String shipperId;
+	private String campaignId;
+	private List<String> productsId;
+}

@@ -1,0 +1,5 @@
+package discoveryServer.paymentService.business.requests.create;
+
+public class CreatePaymentRequest {
+
+}
