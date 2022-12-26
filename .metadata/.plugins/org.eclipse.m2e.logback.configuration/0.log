@@ -2766,3 +2766,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact io.netty:nett
 2022-12-26 19:37:29,230 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-12-26 19:37:29,230 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-12-26 19:37:29,230 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\MicroServiceECommerce\paymentService\src\test\resources
+2022-12-26 23:23:08,393 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
