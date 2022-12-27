@@ -48,4 +48,10 @@ public class PaymentManager implements PaymentService {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void checkIf(String id) {
+		// TODO Auto-generated method stub
+		
+	}
 }
