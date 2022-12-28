@@ -19,27 +19,27 @@ import lombok.AllArgsConstructor;
 public class OrderManager implements OrderService {
 	private OrderRepository orderRepository;
 	
-	@Override
+	//@Override
 	public List<GetAllOrdersResponse> getAll() {
 		return null;
 	}
 
-	@Override
+	//@Override
 	public GetOrderResponse getById(String id) {
 		return null;
 	}
 
-	@Override
+	//@Override
 	public CreateOrderResponse add(CreateOrderRequest createOrderRequest) {
 		return null;
 	}
 
-	@Override
+	//@Override
 	public UpdateOrderResponse update(UpdateOrderRequest updateOrderRequest) {
 		return null;
 	}
 
-	@Override
+	//@Override
 	public void delete(String id) {
 		
 	}
