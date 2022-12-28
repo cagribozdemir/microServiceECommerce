@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="stockService" />
         <module name="filterService" />
         <module name="paymentService" />
         <module name="discoveryServer" />
@@ -19,6 +20,7 @@
       <module name="gateway" target="17" />
       <module name="orderService" target="17" />
       <module name="paymentService" target="17" />
+      <module name="stockService" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="gateway" options="-parameters" />
       <module name="orderService" options="-parameters" />
       <module name="paymentService" options="-parameters" />
+      <module name="stockService" options="-parameters" />
     </option>
   </component>
 </project>
