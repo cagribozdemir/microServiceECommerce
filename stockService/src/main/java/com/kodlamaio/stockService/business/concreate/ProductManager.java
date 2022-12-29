@@ -1,5 +1,7 @@
 package com.kodlamaio.stockService.business.concreate;
 
-public class ProductManager {
+import com.kodlamaio.stockService.business.abstracs.ProductService;
+
+public class ProductManager implements ProductService {
 
 }
