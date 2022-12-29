@@ -1,5 +1,5 @@
-GitRepositoriesView.GitDirectories=C\:\\Casgem\\KemikKadro\\microServiceECommerce\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\Casgem\\KemikKadro\\.git;C\:\\Casgem\\KemikKadro\\microServiceECommerce\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Casgem\\KemikKadro\\.git;.git;
 RepositorySearchDialogSearchPath=C\:\\Casgem\\KemikKadro\\microServiceECommerce
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
