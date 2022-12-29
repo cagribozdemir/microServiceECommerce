@@ -15,4 +15,5 @@ public interface PaymentService {
 	CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest);
 	UpdatePaymentResponse update(UpdatePaymentRequest updatePaymentRequest);
 	void delete(String id);
+	void checkIf(String id);
 }
