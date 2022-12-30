@@ -19,39 +19,36 @@ import lombok.AllArgsConstructor;
 public class PaymentManager implements PaymentService {
 	private PaymentRepository paymentRepository;
 
-	@Override
 	public List<GetAllPaymentsResponse> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public GetPaymentResponse getById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public UpdatePaymentResponse update(UpdatePaymentRequest updatePaymentRequest) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public void delete(String id) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void checkIf(String id) {
 		// TODO Auto-generated method stub
 		
 	}
+
+	
+	
 }
