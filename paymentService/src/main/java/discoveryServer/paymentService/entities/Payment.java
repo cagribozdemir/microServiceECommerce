@@ -9,6 +9,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "paymemts")
 @Data
@@ -18,5 +21,7 @@ public class Payment {
 	@Id
 	@Column(name = "id")
 	private String id;
-	
+
+
+
 }
