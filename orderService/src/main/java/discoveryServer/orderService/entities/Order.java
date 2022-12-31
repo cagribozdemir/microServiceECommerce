@@ -31,8 +31,8 @@ public class Order {
 	@Column(name = "campaignId")
 	private String campaignId;
 	
-	@Column(name = "productsId")
-	private List<String> productsId;
+	/*@Column(name = "productsId")
+	private List<String> productsId;*/
 	
 	@Column(name = "orderNo")
 	private int orderNo;
