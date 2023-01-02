@@ -11,7 +11,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document
-
 public class Filter {
 
     @Id
@@ -21,9 +20,4 @@ public class Filter {
     //PRODUCT
     @Field(name = "product_name")
     private String productName;
-
-
-
-
-
 }

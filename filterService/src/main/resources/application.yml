@@ -1,3 +1,5 @@
+
+
 eureka:
   client:
     fetchRegistry: true
@@ -11,10 +13,17 @@ server:
   port: 0
 spring:
   application:
+
+    name: flter
+  data:
+    mongodb:
+      database: ecommercemongodb
+
     name: filter    #If your computer language is Turkish, please do not use vowels (i)
   data:
     mongodb:
       database: ecommercefilterdb
+
       host: localhost
       port: 27017
   jpa:
@@ -28,6 +37,22 @@ spring:
         persistence:
           validation:
             mode: none
+
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+      group-id: inventory3
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    topic:
+      name: ecommerce_topics3
+
     kafka:
       consumer:
         auto-offset-reset: earliest
@@ -57,4 +82,7 @@ management:
   metrics:
     export:
       prometheus:
+
         enabled: true
+
+

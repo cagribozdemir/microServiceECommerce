@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-
 public class FilterManager implements FilterService {
 
 
