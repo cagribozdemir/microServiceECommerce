@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3510b97-8db2-4602-b6ab-33393527906e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/requests/CreateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/requests/UpdateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/responses/CreateProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/responses/GetAllProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/responses/GetProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/responses/UpdateProductResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/StockServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/StockServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/abstracs/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/abstracs/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/concreate/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/concreate/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/stockService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/stockService.iml" afterDir="false" />
-    </list>
+    <list default="true" id="c3510b97-8db2-4602-b6ab-33393527906e" name="Changes" comment="Product iş kodları olusturuluyor(add)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,6 +180,14 @@
       <updated>1672077939581</updated>
       <workItem from="1672077940867" duration="3256000" />
     </task>
+    <task id="LOCAL-00001" summary="Product iş kodları olusturuluyor(add)">
+      <created>1672997321854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672997321854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +206,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Product iş kodları olusturuluyor(add)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product iş kodları olusturuluyor(add)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
