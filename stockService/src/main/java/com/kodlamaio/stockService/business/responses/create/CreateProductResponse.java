@@ -1,4 +1,4 @@
-package com.kodlamaio.stockService.business.responses;
+package com.kodlamaio.stockService.business.responses.create;
 
 import com.kodlamaio.stockService.entities.Brand;
 import com.kodlamaio.stockService.entities.SecondCategory;
@@ -14,7 +14,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateProductResponse {
+public class
+CreateProductResponse {
     private String id;
     private String name;
     private String description;

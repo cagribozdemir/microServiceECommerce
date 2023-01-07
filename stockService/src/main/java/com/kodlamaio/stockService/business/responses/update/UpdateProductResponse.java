@@ -1,4 +1,4 @@
-package com.kodlamaio.stockService.business.responses;
+package com.kodlamaio.stockService.business.responses.update;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

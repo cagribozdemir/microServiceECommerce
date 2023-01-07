@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.kodlamaio.stockService.entities.Product;
 
-public interface ProductRepository extends JpaRepository<Product, String>{
+import java.util.List;
 
+public interface ProductRepository extends JpaRepository<Product, String>{
 }
