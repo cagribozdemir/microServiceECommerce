@@ -1,5 +1,8 @@
 package com.kodlamaio.stockService;
 
+import com.example.common.utilities.mapping.ModelMapperManager;
+import com.example.common.utilities.mapping.ModelMapperService;
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
