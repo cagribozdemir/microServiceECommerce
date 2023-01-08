@@ -21,6 +21,7 @@ import com.example.filterservice.entities.Filter;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -37,7 +38,7 @@ public class FilterManager implements FilterService {
     public Result addBrand(CreateBrandRequest createBrandRequest) {
         Filter filter = this.modelMapperService.forRequest().map(createBrandRequest, Filter.class);
         this.filterRepository.save(filter);
-        return new SuccessDataResult(BusinessMessage.GlobalMessage.DATA_ADDED_SUCCESSFULLY);
+        return new SuccessResult(BusinessMessage.GlobalMessage.DATA_ADDED_SUCCESSFULLY);
 
     }
 
@@ -119,16 +120,28 @@ public class FilterManager implements FilterService {
     }
 
     @Override
-    public DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double productUnitPrice) {
-        List<Filter> filters = this.filterRepository.getFilterByProductUnitPrice(productUnitPrice);
-        List<GetAllFilterResponse> getAllFilterResponses = filters.stream().map(filter -> this.modelMapperService.forResponse().map(filters, GetAllFilterResponse.class)).collect(Collectors.toList());
+    public DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double minUnitPrice, double maxUnitPrice) {
+        List<Filter> filters = this.filterRepository.findAll();
+        List<GetAllFilterResponse> getAllFilterResponses = new ArrayList<GetAllFilterResponse>();
+        for (Filter filter : filters) {
+            if (filter.getProductUnitPrice() < maxUnitPrice && filter.getProductUnitPrice() > minUnitPrice) {
+                GetAllFilterResponse getAllFilterResponse = this.modelMapperService.forResponse().map(filter, GetAllFilterResponse.class);
+                getAllFilterResponses.add(getAllFilterResponse);
+            }
+        }
         return new SuccessDataResult<>(getAllFilterResponses, BusinessMessage.GlobalMessage.DATA_LISTED_SUCCESSFULY);
     }
 
     @Override
-    public DataResult<List<GetAllFilterResponse>> getByProductRank(double productRank) {
-        List<Filter> filters = this.filterRepository.getFilterByProductRank(productRank);
-        List<GetAllFilterResponse> getAllFilterResponses = filters.stream().map(filter -> this.modelMapperService.forResponse().map(filters, GetAllFilterResponse.class)).collect(Collectors.toList());
+    public DataResult<List<GetAllFilterResponse>> getByProductRank(double minProductRank, double maxProductRank) {
+        List<Filter> filters = this.filterRepository.findAll();
+        List<GetAllFilterResponse> getAllFilterResponses = new ArrayList<GetAllFilterResponse>();
+        for (Filter filter : filters) {
+            if (filter.getProductRank() < maxProductRank && filter.getProductRank() > minProductRank) {
+                GetAllFilterResponse getAllFilterResponse = this.modelMapperService.forResponse().map(filter, GetAllFilterResponse.class);
+                getAllFilterResponses.add(getAllFilterResponse);
+            }
+        }
         return new SuccessDataResult<>(getAllFilterResponses, BusinessMessage.GlobalMessage.DATA_LISTED_SUCCESSFULY);
     }
 

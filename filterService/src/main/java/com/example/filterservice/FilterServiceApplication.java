@@ -29,8 +29,4 @@ public class FilterServiceApplication {
     }
 
 
-
-    //DONT FORGET TO ADD MODEL MAPPER
-    
-
 }

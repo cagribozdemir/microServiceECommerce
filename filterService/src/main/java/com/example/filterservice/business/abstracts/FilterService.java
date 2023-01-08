@@ -10,8 +10,6 @@ import com.example.filterservice.business.requests.update.UpdateBrandRequest;
 import com.example.filterservice.business.requests.update.UpdateMainCategoryRequest;
 import com.example.filterservice.business.requests.update.UpdateProductRequest;
 import com.example.filterservice.business.requests.update.UpdateSecondCategoryRequest;
-import com.example.filterservice.business.responses.get.GetBrandResponse;
-import com.example.filterservice.business.responses.get.GetProductResponse;
 import com.example.filterservice.business.responses.getAll.*;
 
 import java.util.List;
@@ -44,9 +42,9 @@ public interface FilterService {
 
     DataResult<List<GetAllFilterResponse>> getByProductColor(String productColor);
 
-    DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double productUnitPrice);
+    DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double minProductUnitPrice, double maxProductUnitPrice);
 
-    DataResult<List<GetAllFilterResponse>> getByProductRank(double productRank);
+    DataResult<List<GetAllFilterResponse>> getByProductRank(double minProductRank, double maxProductRank);
 
     //Read Brand
 

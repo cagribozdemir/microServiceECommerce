@@ -5,37 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3510b97-8db2-4602-b6ab-33393527906e" name="Changes" comment="Product iş kodları olusturuluyor(add)">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/create/CreateBrandRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/create/CreateMainCategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/create/CreateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/create/CreateSecondCategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/update/UpdateBrandRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/update/UpdateMainCategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/update/UpdateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/requests/update/UpdateSecondCategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/get/GetBrandResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/get/GetMainCategoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/get/GetProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/get/GetSecondCategoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/getAll/GetAllBrandResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/getAll/GetAllFilterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/getAll/GetAllMainCategoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/getAll/GetAllProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/getAll/GetAllSecondCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/responses/get/GetFilterResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/common/utilities/messages/BusinessMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/common/utilities/messages/BusinessMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filterService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/FilterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/FilterServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/abstracts/FilterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/abstracts/FilterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/concretes/FilterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/business/concretes/FilterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/dataAccess/FilterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/dataAccess/FilterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/entities/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/entities/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/StockServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/StockServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/requests/CreateProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/business/requests/CreateProductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/entities/MainCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockService/src/main/java/com/kodlamaio/stockService/entities/MainCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockService/stockService.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/webApi/FilterControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/filterService/src/main/java/com/example/filterservice/webApi/FilterControllers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +159,7 @@
       <updated>1672077939581</updated>
       <workItem from="1672077940867" duration="3256000" />
       <workItem from="1673117175767" duration="10471000" />
-      <workItem from="1673182869921" duration="633000" />
+      <workItem from="1673182869921" duration="7498000" />
     </task>
     <task id="LOCAL-00001" summary="Product iş kodları olusturuluyor(add)">
       <created>1672997321854</created>
@@ -204,7 +179,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="kagan" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
