@@ -2,6 +2,12 @@ package com.example.filterservice.webApi;
 
 import java.util.List;
 
+import javax.ws.rs.GET;
+
+import org.springframework.data.mongodb.repository.Update;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,77 +36,88 @@ import lombok.AllArgsConstructor;
 public class FilterControllers {
 	private FilterService filterService;
 
-	// Create Operations
+
+	@PostMapping("/addbrand")
 	Result addBrand(CreateBrandRequest createBrandRequest) {
 		return filterService.addBrand(createBrandRequest);
 	}
 
+	@PostMapping("/addproduct")
 	Result addProduct(CreateProductRequest createProductRequest) {
 		return filterService.addProduct(createProductRequest);
 	}
 
+	@PostMapping("/addmaincategory")
 	Result addMainCategory(CreateMainCategoryRequest createMainCategoryRequest) {
 		return filterService.addMainCategory(createMainCategoryRequest);
 	}
 
+	@PostMapping("/addsecondcategory")
 	Result addSecondCategory(CreateSecondCategoryRequest createSecondCategoryRequest) {
 		return filterService.addSecondCategory(createSecondCategoryRequest);
 	}
-	// Update Operations
 
+	@PutMapping("/updatebrand")
 	Result updateBrand(UpdateBrandRequest updateBrandRequest) {
 		return filterService.updateBrand(updateBrandRequest);
 	}
 
+	@PutMapping("/updateproduct")
 	Result updateProduct(UpdateProductRequest updateProductRequest) {
 		return filterService.updateProduct(updateProductRequest);
 	}
 
+	@PutMapping("/updatemaincategory")
 	Result updateMainCategory(UpdateMainCategoryRequest updateMainCategoryRequest) {
 		return filterService.updateMainCategory(updateMainCategoryRequest);
 	}
 
+	@PutMapping("/updatesecondcategory")
 	Result updateSecondCategory(UpdateSecondCategoryRequest updateSecondCategoryRequest) {
 		return filterService.updateSecondCategory(updateSecondCategoryRequest);
 	}
 
-	// Read Product
+	@GetMapping("/getallproduct")
 	DataResult<List<GetAllProductResponse>> getAllProduct() {
 		return filterService.getAllProduct();
 	}
 
+	@GetMapping("/productname")
 	DataResult<List<GetAllFilterResponse>> getByProductName(String productName) {
 		return filterService.getByProductName(productName);
 	}
 
+	@GetMapping("/productcolor")
 	DataResult<List<GetAllFilterResponse>> getByProductColor(String productColor) {
 		return filterService.getByProductColor(productColor);
 	}
 
+	@GetMapping("/productunitprice")
 	DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double productUnitPrice) {
 		return filterService.getByProductUnitPrice(productUnitPrice);
 	}
 
+	@GetMapping("/productrank")
 	DataResult<List<GetAllFilterResponse>> getByProductRank(double productRank) {
 		return filterService.getByProductRank(productRank);
 	}
 
-	// Read Brand
-
+	@GetMapping("/getallbrand")
 	DataResult<List<GetAllBrandResponse>> getAllBrand() {
 		return filterService.getAllBrand();
 	}
 
+	@GetMapping("/brandname")
 	DataResult<List<GetAllFilterResponse>> getByBrandName(String brandName) {
 		return filterService.getByBrandName(brandName);
 	}
 
-	// Read Main-Category
+	@GetMapping("/getallmaincategory")
 	DataResult<List<GetAllMainCategoryResponse>> getAllMainCategoryName() {
 		return filterService.getAllMainCategoryName();
 	}
 
-	// Read Second-Category
+	@GetMapping("/getallproduct")
 	DataResult<List<GetAllSecondCategoryResponse>> getAllSecondCategoryName() {
 		return filterService.getAllSecondCategoryName();
 	}
