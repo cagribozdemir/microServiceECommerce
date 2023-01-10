@@ -30,7 +30,7 @@ import lombok.AllArgsConstructor;
 public class FilterControllers {
 	private FilterService filterService;
 
-	// Create Operations
+	
 	Result addBrand(CreateBrandRequest createBrandRequest) {
 		return filterService.addBrand(createBrandRequest);
 	}
@@ -46,7 +46,7 @@ public class FilterControllers {
 	Result addSecondCategory(CreateSecondCategoryRequest createSecondCategoryRequest) {
 		return filterService.addSecondCategory(createSecondCategoryRequest);
 	}
-	// Update Operations
+	
 
 	Result updateBrand(UpdateBrandRequest updateBrandRequest) {
 		return filterService.updateBrand(updateBrandRequest);
@@ -64,7 +64,7 @@ public class FilterControllers {
 		return filterService.updateSecondCategory(updateSecondCategoryRequest);
 	}
 
-	// Read Product
+	
 	DataResult<List<GetAllProductResponse>> getAllProduct() {
 		return filterService.getAllProduct();
 	}
@@ -85,7 +85,7 @@ public class FilterControllers {
 		return filterService.getByProductRank(productRank);
 	}
 
-	// Read Brand
+	
 
 	DataResult<List<GetAllBrandResponse>> getAllBrand() {
 		return filterService.getAllBrand();
@@ -95,12 +95,12 @@ public class FilterControllers {
 		return filterService.getByBrandName(brandName);
 	}
 
-	// Read Main-Category
+	
 	DataResult<List<GetAllMainCategoryResponse>> getAllMainCategoryName() {
 		return filterService.getAllMainCategoryName();
 	}
 
-	// Read Second-Category
+	
 	DataResult<List<GetAllSecondCategoryResponse>> getAllSecondCategoryName() {
 		return filterService.getAllSecondCategoryName();
 	}
