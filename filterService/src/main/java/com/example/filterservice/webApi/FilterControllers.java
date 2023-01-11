@@ -2,9 +2,6 @@ package com.example.filterservice.webApi;
 
 import java.util.List;
 
-import javax.ws.rs.GET;
-
-import org.springframework.data.mongodb.repository.Update;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -36,89 +33,88 @@ import lombok.AllArgsConstructor;
 public class FilterControllers {
 	private FilterService filterService;
 
-
 	@PostMapping("/addbrand")
-	Result addBrand(CreateBrandRequest createBrandRequest) {
+	public Result addBrand(CreateBrandRequest createBrandRequest) {
 		return filterService.addBrand(createBrandRequest);
 	}
 
 	@PostMapping("/addproduct")
-	Result addProduct(CreateProductRequest createProductRequest) {
+	public Result addProduct(CreateProductRequest createProductRequest) {
 		return filterService.addProduct(createProductRequest);
 	}
 
 	@PostMapping("/addmaincategory")
-	Result addMainCategory(CreateMainCategoryRequest createMainCategoryRequest) {
+	public Result addMainCategory(CreateMainCategoryRequest createMainCategoryRequest) {
 		return filterService.addMainCategory(createMainCategoryRequest);
 	}
 
 	@PostMapping("/addsecondcategory")
-	Result addSecondCategory(CreateSecondCategoryRequest createSecondCategoryRequest) {
+	public Result addSecondCategory(CreateSecondCategoryRequest createSecondCategoryRequest) {
 		return filterService.addSecondCategory(createSecondCategoryRequest);
 	}
 
 	@PutMapping("/updatebrand")
-	Result updateBrand(UpdateBrandRequest updateBrandRequest) {
+	public Result updateBrand(UpdateBrandRequest updateBrandRequest) {
 		return filterService.updateBrand(updateBrandRequest);
 	}
 
 	@PutMapping("/updateproduct")
-	Result updateProduct(UpdateProductRequest updateProductRequest) {
+	public Result updateProduct(UpdateProductRequest updateProductRequest) {
 		return filterService.updateProduct(updateProductRequest);
 	}
 
 	@PutMapping("/updatemaincategory")
-	Result updateMainCategory(UpdateMainCategoryRequest updateMainCategoryRequest) {
+	public Result updateMainCategory(UpdateMainCategoryRequest updateMainCategoryRequest) {
 		return filterService.updateMainCategory(updateMainCategoryRequest);
 	}
 
 	@PutMapping("/updatesecondcategory")
-	Result updateSecondCategory(UpdateSecondCategoryRequest updateSecondCategoryRequest) {
+	public Result updateSecondCategory(UpdateSecondCategoryRequest updateSecondCategoryRequest) {
 		return filterService.updateSecondCategory(updateSecondCategoryRequest);
 	}
 
 	@GetMapping("/getallproduct")
-	DataResult<List<GetAllProductResponse>> getAllProduct() {
+	public DataResult<List<GetAllProductResponse>> getAllProduct() {
 		return filterService.getAllProduct();
 	}
 
 	@GetMapping("/productname")
-	DataResult<List<GetAllFilterResponse>> getByProductName(String productName) {
+	public DataResult<List<GetAllFilterResponse>> getByProductName(String productName) {
 		return filterService.getByProductName(productName);
 	}
 
 	@GetMapping("/productcolor")
-	DataResult<List<GetAllFilterResponse>> getByProductColor(String productColor) {
+	public DataResult<List<GetAllFilterResponse>> getByProductColor(String productColor) {
 		return filterService.getByProductColor(productColor);
 	}
 
 	@GetMapping("/productunitprice")
-	DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double productUnitPrice) {
+	public DataResult<List<GetAllFilterResponse>> getByProductUnitPrice(double productUnitPrice) {
 		return filterService.getByProductUnitPrice(productUnitPrice);
 	}
 
 	@GetMapping("/productrank")
-	DataResult<List<GetAllFilterResponse>> getByProductRank(double productRank) {
+	public DataResult<List<GetAllFilterResponse>> getByProductRank(double productRank) {
 		return filterService.getByProductRank(productRank);
 	}
 
 	@GetMapping("/getallbrand")
-	DataResult<List<GetAllBrandResponse>> getAllBrand() {
+	public DataResult<List<GetAllBrandResponse>> getAllBrand() {
 		return filterService.getAllBrand();
 	}
 
 	@GetMapping("/brandname")
-	DataResult<List<GetAllFilterResponse>> getByBrandName(String brandName) {
+	public DataResult<List<GetAllFilterResponse>> getByBrandName(String brandName) {
 		return filterService.getByBrandName(brandName);
 	}
 
 	@GetMapping("/getallmaincategory")
-	DataResult<List<GetAllMainCategoryResponse>> getAllMainCategoryName() {
+	public DataResult<List<GetAllMainCategoryResponse>> getAllMainCategoryName() {
 		return filterService.getAllMainCategoryName();
 	}
 
 	@GetMapping("/getallproduct")
-	DataResult<List<GetAllSecondCategoryResponse>> getAllSecondCategoryName() {
+	public DataResult<List<GetAllSecondCategoryResponse>> getAllSecondCategoryName() {
 		return filterService.getAllSecondCategoryName();
 	}
 }

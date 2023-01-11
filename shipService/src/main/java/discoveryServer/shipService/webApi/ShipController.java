@@ -34,6 +34,7 @@ public class ShipController {
         return shipService.getAll();
     }
 
+	
     @GetMapping("/{id}")
     public GetShipResponse getById(@PathVariable String id) {
         return shipService.getById(id);
@@ -55,4 +56,5 @@ public class ShipController {
         shipService.delete(id);
     }
 	
+    
 }
