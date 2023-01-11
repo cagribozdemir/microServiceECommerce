@@ -5,8 +5,6 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.example.common.utilities.exceptions.BusinessException;
-import com.example.common.utilities.mapping.ModelMapperService;
 
 import discoveryServer.invoiceService.business.abstracts.InvoiceService;
 import discoveryServer.invoiceService.business.requests.create.CreateInvoiceRequest;
@@ -23,9 +21,9 @@ import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
 public class InvoiceManager implements InvoiceService {
+	
 	private InvoiceRepository invoiceRepository;
-	private ModelMapperService modelMapperService;
-	private InvoiceProducer invoiceProducer;
+	
 	
 	@Override
 	public List<GetAllInvoicesResponse> getAll() {
