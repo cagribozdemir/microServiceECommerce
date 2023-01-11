@@ -23,8 +23,7 @@ import lombok.AllArgsConstructor;
 public class InvoiceManager implements InvoiceService {
 	
 	private InvoiceRepository invoiceRepository;
-	private ModelMapperService modelMapperService;
-	private InvoiceProducer invoiceProducer;
+	
 	
 	@Override
 	public List<GetAllInvoicesResponse> getAll() {
