@@ -13,6 +13,6 @@ public interface InvoiceService {
 	List<GetAllInvoicesResponse> getAll();
 	GetInvoiceResponse getById(String id);
 	CreateInvoiceResponse add(CreateInvoiceRequest createInvoiceRequest);
-	UpdateInvoiceResponse update(UpdateInvoiceRequest updateInvoiceRequest);
+	UpdateInvoiceResponse update(UpdateInvoiceRequest updateInvoiceRequest,String id);
 	void delete(String id);
 }
