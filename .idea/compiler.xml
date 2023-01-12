@@ -12,7 +12,6 @@
         <module name="paymentService" />
         <module name="orderService" />
         <module name="commentService" />
-        <module name="stockService" />
         <module name="shipService" />
         <module name="filterService" />
         <module name="discoveryServer" />

@@ -1,16 +1,15 @@
-package com.kodlamaio.stockService.business.responses;
+package com.kodlamaio.stockService.business.requests.create;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class GetProductResponse {
-    private String id;
+@AllArgsConstructor
+public class CreateProductRequest {
+
     private String name;
     private String description;
     private String color;
@@ -24,6 +23,6 @@ public class GetProductResponse {
     private int size;
     private int discount;
     private int quantityLimitPerOrder;
-    private String secondCategoryName;
-    private String brandName;
+    private String secondCategoryId;
+    private String brandId;
 }

@@ -1,15 +1,22 @@
-package com.kodlamaio.stockService.business.requests;
+package com.kodlamaio.stockService.business.responses.create;
 
+import com.kodlamaio.stockService.entities.Brand;
+import com.kodlamaio.stockService.entities.SecondCategory;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.util.List;
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class CreateProductRequest {
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class
+CreateProductResponse {
+    private String id;
     private String name;
     private String description;
     private String color;

@@ -1,15 +1,14 @@
-package com.kodlamaio.stockService.business.responses;
+package com.kodlamaio.stockService.business.requests.update;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class GetAllProductResponse {
+@AllArgsConstructor
+public class UpdateProductRequest {
     private String id;
     private String name;
     private String description;
@@ -24,6 +23,6 @@ public class GetAllProductResponse {
     private int size;
     private int discount;
     private int quantityLimitPerOrder;
-    private String secondCategoryName;
-    private String brandName;
+    private String secondCategoryId;
+    private String brandId;
 }

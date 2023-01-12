@@ -12,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/orderService/orderService.iml" filepath="$PROJECT_DIR$/orderService/orderService.iml" />
       <module fileurl="file://$PROJECT_DIR$/paymentService/paymentService.iml" filepath="$PROJECT_DIR$/paymentService/paymentService.iml" />
       <module fileurl="file://$PROJECT_DIR$/shipService/shipService.iml" filepath="$PROJECT_DIR$/shipService/shipService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stockService/stockService.iml" filepath="$PROJECT_DIR$/stockService/stockService.iml" />
     </modules>
   </component>
 </project>
