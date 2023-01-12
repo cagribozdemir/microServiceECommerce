@@ -6,16 +6,12 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="org.springframework.ide.eclipse.boot.dash.views.BootDashView"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="dash"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

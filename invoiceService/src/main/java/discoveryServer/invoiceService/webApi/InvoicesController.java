@@ -44,8 +44,8 @@ public class InvoicesController {
     }
 
     @PutMapping("/{id}")
-    public UpdateInvoiceResponse update(@Valid @RequestBody UpdateInvoiceRequest request) {
-        return invoiceService.update(request);
+    public UpdateInvoiceResponse update(@Valid @RequestBody UpdateInvoiceRequest request,@PathVariable String id) {
+        return invoiceService.update(request,id);
     }
     
 
