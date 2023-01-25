@@ -11,6 +11,7 @@
         <module name="common" />
         <module name="paymentService" />
         <module name="orderService" />
+        <module name="stockService" />
         <module name="commentService" />
         <module name="shipService" />
         <module name="filterService" />
