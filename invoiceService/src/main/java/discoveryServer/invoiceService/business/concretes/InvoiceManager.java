@@ -2,9 +2,11 @@ package discoveryServer.invoiceService.business.concretes;
 
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
-
+import com.example.common.utilities.exceptions.BusinessException;
+import com.example.common.utilities.mapping.ModelMapperService;
 
 import discoveryServer.invoiceService.business.abstracts.InvoiceService;
 import discoveryServer.invoiceService.business.requests.create.CreateInvoiceRequest;
@@ -15,7 +17,6 @@ import discoveryServer.invoiceService.business.responses.get.GetInvoiceResponse;
 import discoveryServer.invoiceService.business.responses.update.UpdateInvoiceResponse;
 import discoveryServer.invoiceService.dataAccess.InvoiceRepository;
 import discoveryServer.invoiceService.entities.Invoice;
-import discoveryServer.invoiceService.kafka.InvoiceProducer;
 import lombok.AllArgsConstructor;
 
 @Service
@@ -23,11 +24,14 @@ import lombok.AllArgsConstructor;
 public class InvoiceManager implements InvoiceService {
 	
 	private InvoiceRepository invoiceRepository;
-	
+	private ModelMapperService modelMapperService;
 	
 	@Override
 	public List<GetAllInvoicesResponse> getAll() {
-	   return null;
+		List<Invoice> responses = invoiceRepository.findAll();
+        return responses.stream().map(response -> modelMapperService.forResponse()
+                .map(response, GetAllInvoicesResponse.class))
+                .collect(Collectors.toList());
 
 	}
 
@@ -66,8 +70,7 @@ public class InvoiceManager implements InvoiceService {
 	     invoice.setId(id);
 	     invoiceRepository.save(invoice);
 	     UpdateInvoiceResponse response =  modelMapperService.forResponse().map(invoice, UpdateInvoiceResponse.class);
-
-	        return response;
+	     return response;
 	}
 
 	@Override
